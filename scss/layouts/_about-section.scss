@@ -1,0 +1,86 @@
+.section-about {
+	&__title {
+		font-family: "Play", sans-serif;
+		font-weight: 700;
+		font-size: 32px;
+		margin-bottom: 24px;
+		.accent {
+			color: var(--color-brand);
+			text-transform: capitalize;
+		}
+		@media screen and (min-width: $bp-desktop) {
+			font-size: 64px;
+			font-weight: 700;
+			margin-bottom: 40px;
+		}
+	}
+	&__container {
+		display: flex;
+		justify-content: space-between;
+		gap: 32px;
+	}
+	&__text {
+		max-width: auto;
+		@media screen and (min-width: $bp-desktop) {
+			max-width: 709px;
+		}
+	}
+	&__klinik {
+		font-size: 18px;
+		.accent {
+			text-transform: capitalize;
+			font-weight: 700;
+		}
+		@media screen and (min-width: $bp-desktop) {
+			font-size: 22px;
+		}
+	}
+	&__image {
+		display: none;
+		@media screen and (min-width: $bp-desktop) {
+			display: block;
+		}
+	}
+	&__star-1 {
+		position: relative;
+		left: 450px;
+		top: 0;
+		background-image: url("../images/Star-1.png");
+		width: 64px;
+		height: 64px;
+		background-repeat: no-repeat;
+		animation: spin 2s infinite linear;
+		@media screen and (min-width: $bp-desktop) {
+			left: 930px;
+			top: -40px;
+		}
+	}
+	&__star-2 {
+		display: none;
+		@media screen and (min-width: $bp-desktop) {
+			display: block;
+			position: relative;
+			left: 1300px;
+			top: -400px;
+			background-image: url("../images/Star-2.png");
+			width: 40px;
+			height: 40px;
+			background-repeat: no-repeat;
+			animation: spin 1.5s infinite linear;
+		}
+	}
+	&__star-3 {
+		display: none;
+		@media screen and (min-width: $bp-desktop) {
+			display: block;
+			position: relative;
+			left: 1270px;
+			top: -235px;
+			background-image: url("../images/Star-3.png");
+			width: 16px;
+			height: 16px;
+			background-repeat: no-repeat;
+			animation: spin 1s infinite linear;
+		}
+	}
+}

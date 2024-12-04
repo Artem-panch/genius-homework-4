@@ -1,0 +1,63 @@
+.header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding-top: 25px;
+
+	@media screen and (min-width: $bp-desktop) {
+		padding-top: 32px;
+		backdrop-filter: blur(10px);
+	}
+	&__container {
+		display: flex;
+		gap: 40px;
+		align-items: center;
+	}
+	&__nav {
+		display: flex;
+		gap: 40px;
+		align-items: center;
+		flex-grow: 1;
+	}
+	&__logo {
+		flex-grow: 1;
+	}
+	&__menu {
+		display: none;
+		@media screen and (min-width: $bp-desktop) {
+			display: flex;
+			gap: 40px;
+			justify-content: center;
+		}
+	}
+	&__contacts {
+		display: none;
+		@media screen and (min-width: $bp-desktop) {
+			display: flex;
+			gap: 40px;
+			align-items: center;
+			justify-content: end;
+			flex-grow: 1;
+		}
+	}
+	&__address-icon-header {
+		fill: var(--color-primary-dark);
+		transition: fill 0.2s;
+		&:hover {
+			fill: var(--color-brand);
+		}
+	}
+	&__burger {
+		border: none;
+		background-color: transparent;
+		border-radius: 8px;
+		width: 24px;
+		height: 24px;
+		padding: 0;
+		fill: var(--color-primary-light);
+		@media screen and (min-width: $bp-desktop) {
+			display: none;
+		}
+	}
+}

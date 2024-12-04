@@ -1,0 +1,93 @@
+.procedures-section {
+	&__procedures-container {
+		display: flex;
+		gap: 56px;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 16px;
+	}
+	&__button {
+		display: none;
+		@media screen and (min-width: $bp-tablet) {
+			display: flex;
+		}
+	}
+
+	&__procedures-m {
+		font-size: 22px;
+	}
+	&__procedures-i,
+	&__procedures-s {
+		display: none;
+		font-size: 0px;
+		@media screen and (min-width: $bp-desktop) {
+			display: block;
+			font-size: 22px;
+		}
+	}
+	&__mask-img {
+		color: var(--color-primary-light);
+		width: 344px;
+		padding: 372px 77px 32px 115px;
+		border-radius: 4px 120px 4px 120px;
+		text-align: center;
+		background: linear-gradient(
+				180.05deg,
+				rgba(1, 28, 68, 0) 48.53%,
+				rgba(1, 28, 68, 0.725825) 84.61%,
+				var(--color-primary-dark) 100%
+			),
+			url("../images/Mask.png");
+		background-repeat: no-repeat;
+		background-position: center top;
+		background-size: cover;
+	}
+	&__injection-img {
+		display: none;
+		@media screen and (min-width: $bp-desktop) {
+			display: block;
+			color: var(--color-primary-light);
+			width: 344px;
+			padding: 372px 77px 32px 115px;
+			border-radius: 4px 120px 4px 120px;
+			text-align: center;
+			background: linear-gradient(
+					180.05deg,
+					rgba(1, 28, 68, 0) 48.53%,
+					rgba(1, 28, 68, 0.725825) 84.61%,
+					var(--color-primary-dark) 100%
+				),
+				url("../images/injeltion.png");
+			background-repeat: no-repeat;
+			background-position: center top;
+			background-size: cover;
+		}
+	}
+	&__masage-image {
+		display: none;
+		@media screen and (min-width: $bp-desktop) {
+			display: block;
+			color: var(--color-primary-light);
+			width: 344px;
+			padding: 372px 77px 32px 115px;
+			border-radius: 4px 120px 4px 120px;
+			text-align: center;
+			background: linear-gradient(
+					180.05deg,
+					rgba(1, 28, 68, 0) 48.53%,
+					rgba(1, 28, 68, 0.725825) 84.61%,
+					var(--color-primary-dark) 100%
+				),
+				url("../images/masage.png");
+			background-repeat: no-repeat;
+			background-position: right;
+			background-size: auto;
+		}
+	}
+	&__container {
+		display: flex;
+		gap: 20px;
+		align-items: center;
+		justify-content: center;
+	}
+}

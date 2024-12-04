@@ -1,0 +1,58 @@
+.contacts-section {
+	padding-bottom: 0;
+	@media screen and (min-width: $bp-tablet) {
+		padding-bottom: 96px;
+	}
+
+	&__lets-write {
+		background-color: var(--color-primary-dark);
+		background-image: url("../images/menu-background.png");
+		color: var(--color-primary-light);
+		font-weight: 600;
+		font-size: 22px;
+		margin: 0;
+		padding: 50px;
+		max-width: 420px;
+		max-height: 480px;
+		text-align: center;
+		border-radius: 32px;
+		order: 1;
+		justify-content: center;
+		@media screen and (min-width: $bp-tablet) {
+			order: 2;
+		}
+		.accent {
+			color: var(--color-brand);
+		}
+	}
+	&__conteiner {
+		margin: 0 -24px;
+		display: flex;
+		gap: 24px;
+		flex-direction: column;
+		align-items: center;
+		@media screen and (min-width: $bp-tablet) {
+			margin: 0;
+			flex-direction: row;
+			gap: 32px;
+		}
+	}
+	&__map {
+		flex-shrink: 0;
+		height: 176px;
+		border-radius: 16px;
+		border: none;
+		order: 2;
+
+		@media screen and (min-width: $bp-tablet) {
+			order: 1;
+			margin: auto;
+			width: 320px;
+			height: 481px;
+		}
+		@media screen and (min-width: $bp-desktop) {
+			width: 600px;
+			height: 481px;
+		}
+	}
+}

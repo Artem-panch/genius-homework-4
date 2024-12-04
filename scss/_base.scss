@@ -1,0 +1,49 @@
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+.visually-hidden {
+	position: absolute;
+	left: -10000px;
+	top: auto;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+}
+body {
+	background-image: url("../images/background.png");
+	background-size: 1850px 1785px;
+	background-position: center 500px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: var(--color-primary-dark);
+	font-family: "Roboto";
+	line-height: 1.1;
+	font-size: 18px;
+	font-weight: 400;
+	margin: 0;
+	@media screen and (min-width: $bp-desktop) {
+		background-position: center 1300px;
+	}
+}
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin-top: 0;
+}
+.container {
+	width: 100%;
+	max-width: 1288px;
+	margin: 0 auto;
+	padding: 0 20px;
+}

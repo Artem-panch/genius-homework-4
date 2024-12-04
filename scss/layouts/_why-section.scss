@@ -1,0 +1,22 @@
+.section-why {
+	padding-top: 176px;
+	&__container {
+		display: flex;
+		gap: 56px;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	&__list {
+		width: 316px;
+		height: 181px;
+		padding: 24px 32px 24px 32px;
+		gap: 0px;
+		border-radius: 32px;
+		text-align: center;
+		background-color: var(--color-primary-light);
+	}
+	&__chose {
+		font-size: 18px;
+		line-height: 1.3;
+	}
+}
